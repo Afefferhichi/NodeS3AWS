@@ -12,7 +12,6 @@ const myBucket = new S3({
         secretAccessKey:AWS_SECRET_KEY,
     }
 });
-
 module.exports={
     myBucket,
     bucketName:AWS_BUCKET_NAME

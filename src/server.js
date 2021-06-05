@@ -9,7 +9,7 @@ const port = process.env.PORT || 5001;
 const app = express();
 
 app.use(fileUpload());
-app.use('/api',routes)
+app.use('/api',routes);
 
 
 //start app 

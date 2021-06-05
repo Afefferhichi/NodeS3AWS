@@ -6,7 +6,10 @@ const uploadRoute = Router();
 
 uploadRoute.post('/uploadFile', (req, res) => {
 
-
+    let filesName = Object.keys(req.files)
+    filesName.map(singlename =>{
+        console.log({[singlename]:req.files[singlename]});
+    })
     let file = req.files.file1;
     // Setting up S3 upload parameters
     const params = {
